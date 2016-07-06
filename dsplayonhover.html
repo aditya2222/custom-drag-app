@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="libs/jquery.min.js"></script>
+<script>
+$(".playbutton").hover(
+  function(){   
+   $('div.play', this).show();
+  },
+  function(){
+   $('div.play', this).hide();
+  }
+ );
+ 
+
+
+
+</script>
+<style>
+ .play{
+	 background:url(crop1.jpg) no-repeat scroll center center transparent;
+    height: 32px;
+    margin: -62px 29px 0 31px;
+    opacity: 0.8;
+    position: relative;
+    width: 32px;
+    z-index: 100;
+    display:none;
+ }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div class="playbutton">
+         <a href="ppvvideo_detail.php?product_id={product_id}&clip_id={more_id}">{photo_path}</a>
+          <div class="play"></div>
+         </div
+</body>
+</html>

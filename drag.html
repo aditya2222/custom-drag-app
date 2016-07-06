@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>App</title>
+
+<link href="css/screen.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.container {
+    margin-top: 50px;
+    cursor:move;
+}
+#screen {
+    overflow:hidden;
+    width:500px;
+    height:500px;
+    clear:both;
+    border:1px solid black;
+}
+-->
+</style>
+
+
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery-ui.min.js" ></script>
+
+<script type="text/javascript">
+$(function() {
+    $("#draggable").draggable();
+	containment:"#screen";
+});
+</script>
+<script type="text/javascript">
+$(function() {
+    $("#draggablee").draggable();
+	containment:"#screen";
+});
+</script>
+</head>
+
+<body>
+
+<div class="container" style="text-align:center">
+
+    <div id="screen">
+        <img src="crop3.jpg"  style="height:482px; margin-top:5px"class="drag-image" id="draggable"/>
+                <img src="crop4.jpg"  style="height:500px; margin-left:-3.9px"class="drag-image" id="draggablee"/>
+    </div>
+
+</div>
+
+</body>
+</html>
